@@ -1,0 +1,14 @@
+
+#container
+{
+	position: absolute;
+}
+
+.block /*a square*/
+{
+	width: 100px; /*100px wide*/
+	height: 100px; /*100px tall*/
+	position: absolute; 
+	display: none; /*it's invisible*/
+	background-color: black; /*black*/
+}
