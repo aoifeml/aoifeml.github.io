@@ -3,12 +3,15 @@
 
 <head>
 
-<title>blacksheep form test</title>
+<title>Baa Baa Black Sheep</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
 <script src="index.js"></script>
 <script src="indexform.js"></script>
-
+<script src="jquery.blast.js"></script>
+<script src="jquery.blast.min.js"></script>
+<script src="wiggle.js"></script>
+<script src="wiggle2.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic' rel='stylesheet' type='text/css'>
 
 </head>
@@ -58,7 +61,7 @@
 	
 	<div id = panel4>
 		<div id = img4>
-			<div id = dame> 
+			<div class ="dame"> 
 			One for my dame, 
 			</div>
 		</div>
@@ -66,9 +69,11 @@
 	
 	<div id = panel5>
 		<div id = img5>
-		<div id = littleboy> 
-		And one for the little boy<br>
+		<div class = "littleboy"> 
+      
+		And one for the little boy
 	    who lives down the lane. 
+        
 		</div>
 	    </div>
 	    </div>
@@ -110,7 +115,7 @@ text-shadow: 0px 0px 20px black;
 
 .container {
     position: relative;
-    overflow: hidden;  // keep 'snowflakes' from going off the page
+    overflow: hidden;  
 }
 
 #snowflakeContainer {
@@ -118,7 +123,7 @@ text-shadow: 0px 0px 20px black;
     left: 0px;
     top: 0px;
     right: 0px;
-    height: 0px; // don't cover up the form
+    height: 0px; 
 }
 
 }
@@ -192,13 +197,44 @@ text-shadow: 0px 0px 20px black;
 		background-size: cover;
 		height:840px;
 		}
-		#dame
-		{
-	color: white; 
-	font-size: 42px;
-	font-family: 'Karla', sans-serif;
-	text-shadow: 0px 0px 20px black;
-		}
+		
+		
+	.dame {
+	text-align:center;
+  font-size:5.5em;
+  font-family: 'Karla', sans-serif;
+  color:#fff;
+  letter-spacing: -5px;
+  font-weight:200;
+  animation:blur .75s ease-out infinite;
+  text-shadow:0px 0px 5px #fff,
+      0px 0px 7px #fff;
+}
+
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;}
+	
+	}
+		
+		
 #panel5
 {}
 #img5
@@ -208,13 +244,30 @@ background-size: cover;
 height:600px;
 
 }
-#littleboy
+.littleboy
 {
 	color: white; 
 	font-size: 42px;
 	font-family: 'Karla', sans-serif;
-	text-shadow: 0px 0px 20px black;
 	padding-left: 20%;
+	position:absolute;
+	float:left;
+	
+
+
+font-weight: bold;
+
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.littleboy
+ {
+  text-align: center;
+}
+
+body {
+  background-color: #f1f1f1;
+}
 }
 
 
