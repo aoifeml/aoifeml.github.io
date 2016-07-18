@@ -19,7 +19,9 @@
    <source src="baabaablacksheep.mp3"/>  
 </audio> 
 
-
+<div id="snowflakeContainer">
+    <p class="snowflake"><img src="3_12.png" width="80" height="47" alt=""/></p>
+</div>
 <div id = panel1>
 	<div id = img1>
 		<div id = baabaa>
@@ -30,9 +32,7 @@
 </div>
 
 <div id = panel2>
-<div id="snowflakeContainer">
-    <p class="snowflake"><img src="3_12.png" width="80" height="47" alt=""/></p>
-</div>
+
 	<div id = img2>
 		<div id = yessir> 
 		<div id= fieldset>
@@ -109,11 +109,17 @@ font-family: 'Karla', sans-serif;
 text-shadow: 0px 0px 20px black;
 }
 
+body {
+    position: relative;
+}
 
 #snowflakeContainer {
     position: absolute;
     left: 0px;
     top: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
 }
 
 }
