@@ -7,12 +7,25 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
 <script src="index.js"></script>
+<script src="indexform.js"></script>
 
 <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
+
+<div id="bodydiv">
+
+<!--
+<div id="snowflakeContainer">
+    <p class="snowflake"><img src="3_12.png" width="80" height="47" alt=""/></p>
+</div>
+-->
+
+<audio autoplay>  
+   <source src="baabaablacksheep.mp3"/>  
+</audio> 
 
 
 <div id = panel1>
@@ -25,11 +38,17 @@
 </div>
 
 <div id = panel2>
+
 	<div id = img2>
 		<div id = yessir> 
-		Yes sir,<br>
-        Yes sir,<br>
-        Three bags full. 
+		<div id= fieldset>
+		<fieldset class="field">
+			<label>
+			Yes, sir
+			</label>
+			<input type="checkbox" id="yes_sir">
+		</fieldset>
+		</div>
 		</div>
 	</div>
 </div>
@@ -59,12 +78,18 @@
 	</div>
     </div>
     </div>
-
+</div>
 	
 </body>
 
 <style>
 
+#bodydiv
+{
+	max-height:2350px;
+	margin-bottom:none;
+	
+}
 #panel1
 {
 	
@@ -72,10 +97,10 @@
 
 #img1
 {
-	background-image: url(https://i.imgur.com/ZqWmBDj.png);
+	background-image: url(http://i.imgur.com/Ig5giLI.png);
 	background-size:cover;
 	width:100%;
-	height:550px;
+	height:650px;
 }
 
 #baabaa
@@ -90,7 +115,24 @@
 
 #panel2
 {
-	}
+color: white; 
+font-size: 42px;
+font-family: 'Karla', sans-serif;
+text-shadow: 0px 0px 20px black;
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    max-height:2350px;
+	margin:none;
+}
+
+.snowflake:hover {
+    cursor: default;
+}
+
 #img2
 {
 	background-image: url(https://i.imgur.com/So3RDl6.png);
@@ -101,11 +143,31 @@
 #yessir
 {
 	color: white; 
-	font-size: 42px;
+	font-size: 42;
 	font-family: 'Karla', sans-serif;
 	text-shadow: 0px 0px 20px black;
 	padding-left:450px;
-	padding-top:300px;
+	padding-top:100px;
+}
+
+#fieldset
+{
+	border: none;
+
+}
+.field
+{
+	border:none;
+	padding: 0px;
+	margin: 0;
+
+	}
+
+#yes_sir
+{
+	width: 25px;
+	height: 25px;
+	border: 10px solid gray;
 }
 
 #panel3
@@ -134,7 +196,7 @@
 	#img4
 	{
 		background-image: url(http://www.nonprints.com/uploadpic/Julien%20Dupre/big/Dupre_Julien_Shepherdess_With_Her_Flock.jpg);
-		width:100%;
+		background-size: cover;
 		height:840px;
 		}
 		#dame
@@ -149,7 +211,7 @@
 #img5
 { 
 background-image: url(https://i.imgur.com/N2PbkPV.jpg);
-width:100%;
+background-size: cover;
 height:600px;
 
 }
@@ -164,5 +226,6 @@ height:600px;
 
 
 </style>
-
+<script src="fallingsnow.js"></script>
+<script src="prefixfree.min.js"></script>
 </html>

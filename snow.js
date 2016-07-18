@@ -1,4 +1,4 @@
-
+$(document)
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
                             window.webkitRequestAnimationFrame ||
@@ -16,8 +16,13 @@ var transformProperty = getSupportedPropertyName(transforms);
 var snowflakes = [];
  
 // Global variables to store our browser's window size
-var browserWidth;
-var browserHeight;
+//var browserWidth;
+//var browserHeight;
+var size = {
+  width: window.innerWidth || document.body.clientWidth,
+  height: window.innerHeight || document.body.clientHeight
+}
+
  
 // Specify the number of snowflakes you want visible
 var numberOfSnowflakes = 50;
