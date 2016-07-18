@@ -18,62 +18,61 @@
 <audio autoplay>  
    <source src="baabaablacksheep.mp3"/>  
 </audio> 
-
-
-<div id = panel1>
-	<div id = img1>
-		<div id = baabaa>
-		Baa, baa, black sheep,<br>
-        <i>Have you any wool?</i> 
-		</div>
-	</div>	
-</div>
-
-<div id = panel2>
-<div id="snowflakeContainer">
-    <p class="snowflake"><img src="3_12.png" width="80" height="47" alt=""/></p>
-</div>
-	<div id = img2>
-		<div id = yessir> 
-		<div id= fieldset>
-		<fieldset class="field">
-			<label>
-			Yes, sir
-			</label>
-			<input type="checkbox" id="yes_sir">
-		</fieldset>
-		</div>
-		</div>
+<div class="container">
+	<div id="snowflakeContainer">
+	    <p class="snowflake"><img src="3_12.png" width="80" height="47" alt=""/></p>
 	</div>
-</div>
-
-<div id = panel3>
-	<div id = img3>
-		<div id = master> 
-		One for my master, 
-		</div>
-	</div>	
-</div>
-
-
-<div id = panel4>
-	<div id = img4>
-		<div id = dame> 
-		One for my dame, 
-		</div>
+	<div id = panel1>
+		<div id = img1>
+			<div id = baabaa>
+			Baa, baa, black sheep,<br>
+	        <i>Have you any wool?</i> 
+			</div>
+		</div>	
 	</div>
-</div>
-
-<div id = panel5>
-	<div id = img5>
-	<div id = littleboy> 
-	And one for the little boy<br>
-    who lives down the lane. 
-	</div>
-    </div>
-    </div>
-
 	
+	<div id = panel2>
+	
+		<div id = img2>
+			<div id = yessir> 
+			<div id= fieldset>
+			<fieldset class="field">
+				<label>
+				Yes, sir
+				</label>
+				<input type="checkbox" id="yes_sir">
+			</fieldset>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id = panel3>
+		<div id = img3>
+			<div id = master> 
+			One for my master, 
+			</div>
+		</div>	
+	</div>
+	
+	
+	<div id = panel4>
+		<div id = img4>
+			<div id = dame> 
+			One for my dame, 
+			</div>
+		</div>
+	</div>
+	
+	<div id = panel5>
+		<div id = img5>
+		<div id = littleboy> 
+		And one for the little boy<br>
+	    who lives down the lane. 
+		</div>
+	    </div>
+	    </div>
+</div>
 </body>
 
 <style>
@@ -109,11 +108,17 @@ font-family: 'Karla', sans-serif;
 text-shadow: 0px 0px 20px black;
 }
 
+.container {
+    position: relative;
+    overflow: hidden;  // keep 'snowflakes' from going off the page
+}
 
 #snowflakeContainer {
     position: absolute;
     left: 0px;
     top: 0px;
+    right: 0px;
+    height: 0px; // don't cover up the form
 }
 
 }
