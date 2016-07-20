@@ -8,13 +8,19 @@
 		$(document).ready(function(){
 			$.ajax({
 				url: "https://api.spotify.com/v1/search?q=prince&type=album",
+				data:{
+					q: "album:prince",
+					type: "album",
+					limit: "15",
+
+				},
 				success: ajaxHandler
 			});
 		});
 
 		function ajaxHandler(data)
 		{
-			console.log(data);
+			console.log(data); //
 
 			var results = data.albums.items;
 			for(var i = 0; i < results.length; i++)

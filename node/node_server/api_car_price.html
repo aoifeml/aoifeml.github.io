@@ -1,0 +1,39 @@
+<html>
+<head>
+        <title>API Example</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <script>
+$(document).ready(function(){
+			
+			$("#price_up").click(function(){
+				$.ajax({
+					url: "http://localhost:3000/price_up",
+					
+				});
+			});
+				$("#price_down").click(function(){
+				$.ajax({
+					url: "http://localhost:3000/price_down",
+					
+				});
+			});
+				$("#current_price").click(function(){
+				$.ajax({
+					url: "http://localhost:3000/retrieve",
+					});
+				});
+			});
+
+        </script>
+
+
+</head>
+<body>
+<div id="current_price"></div>
+        <button id="price_up">Increase Price</button><button id="price_down">Decrease Price</button>
+        
+</body>
+<script src="api_car_price.js"></script>
+</html>
