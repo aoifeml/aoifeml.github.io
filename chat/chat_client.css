@@ -45,12 +45,12 @@ body
 
 #chat-log ul li.them-line
 {
-	background-color: #B3E9FF;
+	/*background-color: #B3E9FF;*/
 }
 
 form
 {
-	background-color: #FFF;
+	/*background-color: #FFF;*/
 	position: fixed;
 	bottom: 5px;
 	left: 5px;
