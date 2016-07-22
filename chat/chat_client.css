@@ -2,26 +2,22 @@ body
 {
 	font: 13px;
 	font-family: 'Muli', sans-serif;
-}
+
+	}
+
 #chat-meta
 {
-	top:0px;
-	background-color:#B3E9FF;
-	width:100%;
-	background-size: cover;
+	top: 0px;
+	width: 100%;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
 }
 
-#gradient
-{
-	
-	background: cover;
-	height:600px;
-	width: 100%;
-}
 
 #chat-log
 {
-	background: linear-gradient(#B3E9FF, #FBFFB3);
+	
 	margin: 0px;
 	border: none;
 	position: fixed;
@@ -29,6 +25,7 @@ body
 	bottom: 0px;
 	width: 100%;
 	overflow-y: scroll;
+	
 }
 
 #chat-log ul
@@ -38,12 +35,13 @@ body
 	padding: 0;
 	border: none;
 	height:100%;
+	
 }
 
 #chat-log ul li
 {
 	padding: 0px 0px;
-}
+	}
 
 #chat-log ul li.them-line
 {
@@ -59,6 +57,7 @@ form
 	right: 5px;
 	padding: 0;
 	height: 30px;
+	border: none;
 }
 
 chat-form
@@ -68,7 +67,7 @@ chat-form
 
 form #chat-input
 {
-	border: none;
+	border: 1px;
 	padding: 10px;
 	width: 85%;
 	margin-right: .5%;
@@ -81,4 +80,17 @@ form button
 	border: none;
 	padding: 10px;
 	font-family: 'Muli', sans-serif;
+}
+
+.chat-entry {
+	border: 1px;
+}
+
+button #chat-start
+{
+	
+}
+.start-chatting {
+	border:1px;
+	background-color: #B3E9FF;
 }

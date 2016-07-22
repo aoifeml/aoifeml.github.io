@@ -1,25 +1,46 @@
-<!DOCTYPE html>
-
-<html>
-
 <head>
-	
-	<title>chat client</title>
+
+<title>chat</title>
 
 <link rel="stylesheet" type="text/css" href="chat_client.css">
+<script src="chat_client.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script src="jquery.blast.js"></script>
+<script src="jquery.blast.min.js"></script>
 <script src="chat_client.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+<script src="webcam.js"></script>
+<script src="ajaxupload.js"></script>
+<script src="finger.js"></script>
 
+<style>
+#background
+{
+	
+	background-image: url(https://i.imgur.com/So3RDl6.png);
+		background-size:cover;
+		width:100%;
+		z-index:100;
+		
+}
+body,td,th {
+	font-family: Muli, sans-serif;
+	font-style: italic;
+	color: #7A69BA;
+}
+
+
+
+</style>
 
 </head>
-
 <body>
+<div id="background">
+
 <div id="chat-meta">
-	<input type="text" id="chat-name"><button id="chat-start">start chatting</button>
-	</div>
-	<div id="gradient">
+	<input type="text" id="chat-name"><button class="start-chatting" id="chat-start">start chatting</button>
+</div>
+
 	<div id="chat-log">
 		<ul>
 			
@@ -27,15 +48,41 @@
 	</div>
 
 <form id="chat-form">
-	<fieldset>
+	<fieldset class="chat-entry">
 	<input type="text" id="chat-input">
 	<button>send</button>
 	</fieldset>
 </form>
 
+
 </div>
 
 </body>
+<script>
+// Colors the paragraph
+$(function() {
+  
+  function rand(min, max) {
+    return parseInt(Math.round(min + Math.random() * (max - min)));
+  }
+  
+  $('#btn').on('click', function () {
+    // Blasts the paragraph
+    var words = $('p').blast({
+      delimiter: 'word',
+      tag: 'em'
+    });
 
+     // Gives a random color to every word
+    words.each(function() {
+      $(this).css('color', 'rgb(' + rand(0, 255) + ', ' + rand(0, 255) + ', ' + rand(0, 255) + ')');
+    });
+    
+   });
 
+   $('#btn2').on('click', function () {
+       $('p').blast(false);
+   });
+});
+</script>
 </html>
