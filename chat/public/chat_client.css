@@ -1,27 +1,52 @@
 body
 {
-	font: 13px;
-	font-family: 'Muli', sans-serif;
-}
-#chat-meta
-{
-	top:0px;
-	background-color:#B3E9FF;
-	width:100%;
-	background-size: cover;
+	
+	color: ##000000;
+
+	
+  font-size:24px;
+  font-family: 'Karla', sans-serif;
+    
+  animation:blur 1s ease-out infinite;
+  text-shadow:0px 0px 2px #fff,
+      0px 0px 2px #fff;
 }
 
-#gradient
-{
+@keyframes blur{
+  from{
+      text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 15px #fff,
+      0px 0px 35px #fff,
+      0px 0px 35px #fff,
+      0px 0px 35px #B3E9FF,
+      0px 0px 100px #B3E9FF,
+      0px -10px 100px #B3E9FF,
+      0px -10px 100px #B3E9FF;}
 	
-	background: cover;
-	height:600px;
-	width: 100%;
+	}
 }
+
+
+#chat-meta
+{
+	top: 0px;
+	width: 100%;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+
+}
+
 
 #chat-log
 {
-	background: linear-gradient(#B3E9FF, #FBFFB3);
+	
 	margin: 0px;
 	border: none;
 	position: fixed;
@@ -29,6 +54,7 @@ body
 	bottom: 0px;
 	width: 100%;
 	overflow-y: scroll;
+	
 }
 
 #chat-log ul
@@ -38,27 +64,28 @@ body
 	padding: 0;
 	border: none;
 	height:100%;
+	
 }
 
 #chat-log ul li
 {
 	padding: 0px 0px;
-}
+	}
 
 #chat-log ul li.them-line
 {
-	background-color: #B3E9FF;
-}
+	}
 
 form
 {
-	background-color: #FFF;
+	
 	position: fixed;
 	bottom: 5px;
 	left: 5px;
 	right: 5px;
 	padding: 0;
 	height: 30px;
+	border: none;
 }
 
 chat-form
@@ -68,10 +95,21 @@ chat-form
 
 form #chat-input
 {
-	border: none;
+	border: 0px;
 	padding: 10px;
 	width: 85%;
 	margin-right: .5%;
+}
+#chat_input
+{
+	height: 18px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 5px;
+	margin-right: 10px;
+	font-family: Muli, sans-serif;	
+	font-size: 16px;
 }
 
 form button
@@ -82,3 +120,28 @@ form button
 	padding: 10px;
 	font-family: 'Muli', sans-serif;
 }
+
+.chat-entry {
+	border: 0px;
+}
+
+
+#chat-start {
+
+	
+}
+
+
+
+button #chat-start
+{
+
+	
+}
+.start-chatting {
+	border:0px;
+	background-color: #B3E9FF;
+}
+
+
+

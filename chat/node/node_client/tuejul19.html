@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+<script src="tuejul19.js"></script>
+<style>
+.console-line
+{
+    font-family: monospace;
+    margin: 2px;
+}
+.api_result
+{
+	width: 60px;
+}
+.api_return
+{
+	width: 60px;
+}
+.api_field
+{
+	width: 60px;
+}
+</style>
+
+</head>
+<body>
+<textarea id="api_result" cols=40 rows=20> </textarea>
+	<fieldset>
+		<label>Search Term:</label>
+		<input type="text" id="api_term">
+	</fieldset>
+	<fieldset>
+		<label>Return Only:</label>
+		<select id="api_return">
+			<option value="album">Albums</option>
+			<option value="artist">Artists</option>
+			<option value="track">Songs</option>
+			<option value="playlist">Playlists</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<label>Search Only:</label>
+		<select id="api_field">
+			<option value="album">Albums</option>
+			<option value="artist">Artists</option>
+			<option value="track">Songs</option>
+			<option value="playlist">Playlists</option>
+		</select>
+	</fieldset>
+	<button id="api_search">Search the API</button>
+
+	</body>
+
+
+	</html>
