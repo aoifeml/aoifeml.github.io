@@ -1,146 +1,88 @@
-#body
-{
-	
-	color: ##000000;
-
-	
-  font-size:24px;
-  font-family: 'Karla', sans-serif;
-    
-  animation:blur 1s ease-out infinite;
-  text-shadow:0px 0px 2px #fff,
-      0px 0px 2px #fff;
+body {
+        background-image: url(http://www.netanimations.net/Animated-gif-stars-twinkling-in-night-sky.gif);
+        background-repeat: repeat-x repeat-y;
+        font: 30pt;
+        font-family: 'Helvetica',sans-serif;
+        animation: blur 1s ease-out infinite;
+        text-shadow: 0 0 6px #fff,0 0 6px #fff;
 }
 
-@keyframes blur{
-  from{
-      text-shadow:0px 0px 10px #fff,
-      0px 0px 10px #fff, 
-      0px 0px 15px #fff,
-      0px 0px 15px #fff,
-      0px 0px 15px #fff,
-      0px 0px 15px #fff,
-      0px 0px 15px #fff,
-      0px 0px 15px #fff,
-      0px 0px 35px #fff,
-      0px 0px 35px #fff,
-      0px 0px 35px #B3E9FF,
-      0px 0px 100px #B3E9FF,
-      0px -10px 100px #B3E9FF,
-      0px -10px 100px #B3E9FF;}
-	
-	}
-}
-
-#chat-meta
-{
-	top: 0px;
-	width: 100%;
-	right: 0px;
-	left: 0px;
-	bottom: 0px;
-
+@keyframes blur {
+        from {
+                text-shadow: 0 0 10px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #fff,0 0 20px #fff,0 0 20px #fff,0 0 20px #fff,0 0 20px #fff,0 0 45px #fff,0 0 45px #fff,0 0 45px #B3E9FF,0 0 100px #B3E9FF,0 -10px 100px #B3E9FF,0 0 45px #B3E9FF,0 0 100px #B3E9FF,0 -10px 100px #B3E9FF,0 -10px 100px #B3E9FF;
+        }
 }
 
 
-#chat-log
-{
-	
-	margin: 0px;
-	border: none;
-	position: fixed;
-	top: 30px;
-	bottom: 0px;
-	width: 100%;
-	overflow-y: scroll;
-	
+#chat_meta {
+        margin-top: 5px;
+        margin-left: 20px;
+        position: fixed;
 }
 
-#chat-log ul
-{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	border: none;
-	height:100%;
-	
+#chat_name {
+        height: 20px;
+        width: 150px;
+        margin-right: 10px;
+        font-family: 'Helvetica',sans-serif;
+        font-size: 16px;
 }
 
-#chat-log ul li
-{
-	padding: 0px 0px;
-	}
-
-#chat-log ul li.them-line
-{
-	}
-
-form
-{
-	
-	position: fixed;
-	bottom: 5px;
-	left: 5px;
-	right: 5px;
-	padding: 0;
-	height: 30px;
-	border: none;
+#chat_start {
+        background-color: #B3E9FF;
+        font-size: 12px;
+        font-family: 'Helvetica',sans-serif;
+        padding: 5px;
+        width: 40px;
+        border: none;
 }
 
-chat-form
-{
-	border:none;
+#chat_log {
+        background-color: none;
+        margin: 0;
+        position: fixed;
+        top: 40px;
+        overflow-y: scroll;
+        font-family: 'Helvetica',sans-serif;
+        font-size: 36px;
+        font-weight: 100;
 }
 
-form #chat-input
-{
-	border: 0px;
-	padding: 10px;
-	width: 85%;
-	margin-right: .5%;
-}
-#chat_input
-{
-	height: 18px;
-	width: 100%;
-	top: 0px;
-	left: 0px;
-	right: 5px;
-	margin-right: 10px;
-	font-family: Muli, sans-serif;	
-	font-size: 16px;
+#chat_log ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
 }
 
-form button
-{
-	width: 12%;
-	background-color: #B3E9FF;
-	border: none;
-	padding: 10px;
-	font-family: 'Muli', sans-serif;
+form {
+        background: none;
+        position: fixed;
+        bottom: 10px;
+        right: 5px;
+        padding: 0;
 }
 
-.chat-entry {
-	border: 0px;
+fieldset {
+        border: none;
 }
 
-
-#chat-start {
-
-	
+#chat_input {
+        height: 20px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 5px;
+        font-size: 16px;
+        font-family: 'Helvetica',sans-serif;
 }
 
-
-
-button #chat-start
-{
-
-	
+#send {
+        background-color: #B3E9FF;
+        font-size: 12px;
+        font-family: 'Helvetica',sans-serif;
+        text-align: center;
+        padding: 5px;
+        right: 5px;
+        width: 40px;
+        border: none;
 }
-.start-chatting {
-	border:0px;
-	background-color: #B3E9FF;
-}
-
-
-

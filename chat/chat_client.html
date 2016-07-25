@@ -1,43 +1,62 @@
-<head>
-<link rel="stylesheet" type="text/css" href="chat_client.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
-<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
-<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
-<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
-<script src="chat_client.js"></script>
-<!-- <script src="blast.js"></script>
-<script src="blast.min.js"></script> -->
-<!-- <script src="blaster.js"</script> -->
-
-<title>chat</title>
-
-</head>
-
-<div id="body">
+<!DOCTYPE html>
+<!--/*
+ _______           _        _______  _                 _______    _______           _______ _________
+(  ____ \|\     /|( (    /|(  ___  )( (    /||\     /|(       )  (  ____ \|\     /|(  ___  )\__   __/
+| (    \/( \   / )|  \  ( || (   ) ||  \  ( |( \   / )| () () |  | (    \/| )   ( || (   ) |   ) (   
+| (_____  \ (_) / |   \ | || |   | ||   \ | | \ (_) / | || || |  | |      | (___) || (___) |   | |   
+(_____  )  \   /  | (\ \) || |   | || (\ \) |  \   /  | |(_)| |  | |      |  ___  ||  ___  |   | |   
+      ) |   ) (   | | \   || |   | || | \   |   ) (   | |   | |  | |      | (   ) || (   ) |   | |   
+/\____) |   | |   | )  \  || (___) || )  \  |   | |   | )   ( |  | (____/\| )   ( || )   ( |   | |   
+\_______)   \_/   |/    )_)(_______)|/    )_)   \_/   |/     \|  (_______/|/     \||/     \|   )_(   
+                                                                                                     
+ replaces the last word of each 
+ sentence with a synonym!
 
 
-<div id="chat-meta">
-	<input type="text" id="chat-name" placeholder="who are you?"><button class="start-chatting" id="chat-start">start chatting</button>
-</div>
- <div id="chatbox">
-	<div id="chat-log">
-		<ul>
-			
-		</ul>
-	</div>
-</div>
-<form id="chat-form">
-	<fieldset class="chat-entry">
-	<input type="text" id="chat-input" placeholder="what's on your mind?">
-	<button id="btn">send</button>
-	</fieldset>
-</form>
+ :) aoife leonard 7/24/2016 :)
+ -->
+<html>
+        <head>
 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+                </script>
+                <script src="https://cdn.socket.io/socket.io-1.4.5.js">
+                </script>
+                <link href='https://fonts.googleapis.com/css?family=Muli:400,300,300italic' rel=
+                'stylesheet' type='text/css'>
+                <title>
+                        do you know what i mean?
+                </title>
+                <link href="chat_client.css" rel="stylesheet" type="text/css">
+                <script src="chat_client.js" type="text/javascript">
+                </script>
+                <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js">
+                </script>
+                <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js">
+                </script>
+                <script src="https://cdn.socket.io/socket.io-1.4.5.js">
+                </script>
+        </head>
+        <body>
+                <div id="chat_meta">
+                        <input id="chat_name" placeholder="who are you?" type="text"> <button id=
+                        "chat_start">enter</button>
+                </div>
 
+                <div id="chat_log">
+                        <ul>
+                        </ul>
+                </div>
 
+                <form id="chat_form" name="chat_form">
+                        <fieldset id="chat_entry">
+                                <input id="chat_input" placeholder="what's on your mind?" type=
+                                "text">
+                        </fieldset>
 
-
-</div>
-
-
+                        <fieldset class="send" id="send_button">
+                                <button id="send">send</button>
+                        </fieldset>
+                </form>
+        </body>
 </html>
