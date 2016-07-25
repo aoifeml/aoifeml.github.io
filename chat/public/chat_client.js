@@ -88,7 +88,7 @@ $(document)
                                         var newWord = synonymArray[Math.floor(Math.random() * synonymArray.length)];
                                         console.log(newWord);
                                         messageObject.text = originalMessage.split(" " + originalWord)
-                                                .join(' <i>' + newWord + '</i>');
+                                                .join('  ' + newWord + '  ');
                                         sendItIn();
                                 }
 
